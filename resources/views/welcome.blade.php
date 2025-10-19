@@ -122,7 +122,7 @@
     // Redirect to index page after 4 seconds
     setTimeout(() => {
       window.location.href = "{{ url('index') }}"; // change to index.php if needed
-    }, 6000);
+    }, 1000);
   </script>
 </body>
 </html>
