@@ -20,7 +20,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+        return view('contacts.create');
     }
 
     /**
@@ -28,7 +28,22 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        // dd($request->all());
+          $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required',
+            'phone' => 'required|string',
+            'message' => 'required',
+           
+
+        ]);
+
+        Contact::create($request->all());
+
+        return redirect()->route('contacts.index')
+            ->with('success', 'Message added successfully!');
+    
     }
 
     /**
