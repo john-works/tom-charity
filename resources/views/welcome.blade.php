@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loading | Bwabale Tom Charity Foundation</title>
+  <title>Bwabale Tom Charity Foundation</title>
   <style>
     /* Reset */
     * {
@@ -122,7 +122,7 @@
     // Redirect to index page after 4 seconds
     setTimeout(() => {
       window.location.href = "{{ url('index') }}"; // change to index.php if needed
-    }, 4000);
+    }, 6000);
   </script>
 </body>
 </html>
