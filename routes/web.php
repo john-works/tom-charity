@@ -5,7 +5,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DonateController;
 
 
-/Route::get('/', function () {
+Route::get('/', function () {
      return view('welcome');
  });
 
