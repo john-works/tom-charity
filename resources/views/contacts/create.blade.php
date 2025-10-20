@@ -43,7 +43,7 @@
              <form action="{{ route('contacts.store') }}" method="POST">
                         @csrf
 
-              <div class="form-group">
+              <div class="form-">
                 <input type="text"  name="name" class="form-control" placeholder="Your Name" required>
               </div>
               <div class="form-group">
